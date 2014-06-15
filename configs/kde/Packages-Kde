@@ -6,7 +6,6 @@ mhwd
 ## Xorg Packages
 inxi
 libdnet
-mesa
 mesa-demos
 >x86_64 lib32-mesa-demos
 netkit-bsd-finger
@@ -29,9 +28,18 @@ xorg-xinit
 
 ## Artwork
 manjaro-artwork
-manjaro-nature-kdm
-manjaro-nature-splash
-tulliana-wallpapers
+kdm-theme-manjaro-vector
+ksplash-theme-manjaro-vector
+kdeartwork-wallpapers-manjaro-vector
+kdm-theme-manjaro
+ksplash-theme-manjaro
+kdeartwork-wallpapers-tr-community
+kde-theme-violet-pastel
+kde-theme-air-black-remix-green
+kdeartwork-colorschemes-oxygreen
+kdeplasma-theme-cupertino-ish
+kdeicons-kfaenza
+plymouth-theme-manjaro-elegant
 
 ## Community KDE packages
 udiskie
@@ -44,6 +52,11 @@ kio-mtp
 mtpfs
 razor-qt
 kio-sysinfo
+gvfs-smb
+gvfs-mtp
+gvfs-afc
+gvfs
+kdeconnect
 
 ## KDE (minimal base)
 #kde-wallpapers
@@ -69,7 +82,7 @@ kdegraphics-kgamma
 kdegraphics-gwenview
 kdegraphics-ksnapshot
 kdegraphics-okular
-kdeutils-kwallet
+#kdeutils-kwallet
 kdeutils-kcalc
 kdeutils-ark
 kdeutils-kgpg
@@ -78,8 +91,14 @@ kdeutils-sweeper
 kdeplasma-addons-applets-showdesktop
 kdeplasma-addons-applets-icontasks
 kdeplasma-applets-plasma-nm
-kdeplasma-addons-applets-lancelot
+kdeplasma-applets-homerun
 manjaro-settings-manager
+
+## Network
+netctl
+networkmanager
+networkmanager-dispatcher-ntpd
+openresolv
 
 ## Graphical installer
 thus
@@ -110,16 +129,19 @@ patch
 patchutils
 svn
 yaourt
+openssh
+samba
 
 ## Applications
-#rekonq
+qtcreator
+rekonq
 kdebase-konqueror
 kdepim
 k3b
 digikam
 #smplayer
 simple-scan
-#amarok
+amarok
 #partitionmanager-svn
 gparted
 gimp
@@ -127,17 +149,15 @@ vlc
 imagewriter
 kdenetwork
 ktorrent
-#kvirc
-#skype
-#steam
 #wine
 #q4wine
 #wine_gecko
 #winetricks
 yakuake
 konversation
-clementine
 manjaro-welcome
+turbulence
+turbulence-artwork
 
 ## Package management
 octopi
@@ -145,8 +165,8 @@ octopi-notifier
 #pamac
 
 ## GTK
-firefox
-thunderbird
+#firefox
+#thunderbird
 oxygen-gtk2
 oxygen-gtk3
 kde-gtk-config
@@ -158,6 +178,7 @@ icedtea-web-java7
 manjaro-printer
 
 ## Office
+#libreoffice-installer
 libreoffice-en-US
 libreoffice
 libreoffice-kde4
