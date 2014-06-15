@@ -17,7 +17,7 @@ echo "update fstab for swap" > /tmp/livecd.log
 swapdev="$(fdisk -l 2>/dev/null | grep swap | cut -d' ' -f1)"
 if [ -e "${swapdev}" ]; then
 	swapon ${swapdev}
-	echo "${swapdev} swap swap defaults 0 0 #configured by manjaroiso" >>/etc/fstab
+	echo "${swapdev} swap swap defaults 0 0 #configured by sonariso" >>/etc/fstab
 fi
 
 echo "set locale" >> /tmp/livecd.log
@@ -70,7 +70,7 @@ echo "configure user" >> /tmp/livecd.log
 # do_makeuser
 addgroups="video,audio,power,disk,storage,optical,network,lp,scanner"
 useradd -m -p "" -g users -G $addgroups ${username}
-sed -i "s#${username}.*#${username}:\$1\$uYIrxnwJ\$a5wTa84YxxYmD.sKX/Lll1:14942:0:99999:7:::#" /etc/shadow
+sed -i "s#${username}.*#${username}:\$6\$rcWW3n0s\$gNpR/YpWgqQRlX2lbly.i4ND73ZIj90VH11nDzd6V6GX9i.A17ELD6uyfQo7VOmOyqRvCXI0VDAHAQR3KtB4t.:14942:0:99999:7:::#" /etc/shadow
 echo "Icon=/var/lib/AccountsService/icons/${username}.png" >> /var/lib/AccountsService/users/${username}
 
 # do_configsforroot
