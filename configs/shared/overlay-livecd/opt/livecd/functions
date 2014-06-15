@@ -36,9 +36,9 @@ if [ -e "/bootmnt/${install_dir}/${arch}/lxde-image.sqfs" ] ; then
    DESKTOP="LXDE"
    DESKTOP_IMG="lxde-image"
 fi
-if [ -e "/bootmnt/${install_dir}/${arch}/e17-image.sqfs" ] ; then
-   DESKTOP="E17"
-   DESKTOP_IMG="e17-image"
+if [ -e "/bootmnt/${install_dir}/${arch}/enlightenment-image.sqfs" ] ; then
+   DESKTOP="ENLIGHTENMENT"
+   DESKTOP_IMG="enlightenment-image"
 fi
 if [ -e "/bootmnt/${install_dir}/${arch}/custom-image.sqfs" ] ; then
    DESKTOP="CUSTOM"
@@ -497,7 +497,7 @@ hd_config()
     sleep 3
     chroot ${DESTDIR} pacman -Syy &> /dev/null
 
-    # Install xf86-video driver
+    # Install drivers
 
     if [ -e "/opt/livecd/pacman-gfx.conf" ] ; then
        DIALOG --infobox "${_installvideodriver}"  6 40
@@ -506,6 +506,7 @@ hd_config()
        mount -o bind /opt/livecd ${DESTDIR}/opt/livecd > /tmp/mount.pkgs.log
        ls ${DESTDIR}/opt/livecd >> /tmp/mount.pkgs.log
 
+       # Install xf86-video driver
        if  [ "${USENONFREE}" == "yes" ] || [ "${USENONFREE}" == "true" ]; then
 	   if  [ "${VIDEO}" == "vesa" ]; then
            	chroot ${DESTDIR} mhwd --install pci video-vesa --pmconfig "/opt/livecd/pacman-gfx.conf" &>/dev/null
@@ -519,6 +520,10 @@ hd_config()
            	chroot ${DESTDIR} mhwd --auto pci free 0300 --pmconfig "/opt/livecd/pacman-gfx.conf" &>/dev/null
 	   fi
        fi
+
+       # Install network drivers
+       chroot ${DESTDIR} mhwd --auto pci free 0200 --pmconfig "/opt/livecd/pacman-gfx.conf" &>/dev/null
+       chroot ${DESTDIR} mhwd --auto pci free 0280 --pmconfig "/opt/livecd/pacman-gfx.conf" &>/dev/null
 
        umount ${DESTDIR}/opt/livecd
        rmdir ${DESTDIR}/opt/livecd

@@ -1,12 +1,68 @@
+## The actual 'base' group, minus netctl
+bash
+bzip2
+coreutils
+cronie
+cryptsetup
+device-mapper
+dhcpcd
+diffutils
+e2fsprogs
+file
+filesystem
+findutils
+gawk
+gcc-libs
+gettext
+glibc
+grep
+gzip
+inetutils
+iproute2
+iputils
+jfsutils
+keyboardctl
+less
+licenses
+locale-info
+logrotate
+lvm2
+man-db
+man-pages
+manjaro-hotfixes
+manjaro-system
+mdadm
+mesa
+mhwd
+mhwd-db
+nano
+pacman
+pciutils
+pcmciautils
+perl
+procps-ng
+psmisc
+reiserfsprogs
+s-nail
+sed
+shadow
+sysfsutils
+systemd-sysvcompat
+tar
+texinfo
+usbutils
+util-linux
+vi
+which
+xfsprogs
+
 ## Base Packages
-base
 linux-firmware
 lsb-release
 haveged # needed for pacman-init
 manjaro-firmware
 manjaro-release
 memtest86+
-syslog-ng
 
 ## Kernel
 KERNEL
@@ -21,9 +77,6 @@ sudo
 syslinux4
 xdg-utils
 xdg-user-dirs
-
-## Install scripts
-arch-install-scripts
 
 ## Compression Codecs
 arj
@@ -56,11 +109,11 @@ wget
 btrfs-progs
 dmraid
 dosfstools
+ecryptfs-utils
 testdisk
 nilfs-utils
 nfs-utils
-ntfsprogs
-ecryptfs-utils
+ntfs-3g
 
 ## Fonts
 terminus-font
@@ -82,10 +135,6 @@ modemmanager
 nbd
 KERNEL-ndiswrapper
 ndiswrapper-utils
-netctl
-networkmanager
-networkmanager-dispatcher-ntpd
-openresolv
 usb_modeswitch
 wpa_actiond
 wpa_supplicant
