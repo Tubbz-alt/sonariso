@@ -1,0 +1,36 @@
+#!/usr/bin/bash
+notify_me() {
+  ALL_USER="$(users | sort )"
+  echo Desktop-Message to: $ALL_USER
+        for USER_TMP in $ALL_USER; do
+                if [ "$USER_TMP" = "$USER_LAST" ]; then
+                        #if user already notified, continue
+                        continue
+                fi
+                su $USER_TMP -c "XAUTHORITY=/home/$USER_TMP/.Xauthority DISPLAY=:0 notify-send $1 $2"
+                #save last username to avoid double notification
+                USER_LAST=$USER_TMP
+        done
+}
+
+
+    rm -f /var/lib/pacman/db.lck
+if [ ! -e  /etc/xdg/indinitgs ]; then
+    exec >& /etc/xdg/loginitgs
+    date
+    set -x
+    nm-online -q
+    pacman-mirrors -g
+    pacman -Syy
+    for i in /var/cache/pacman/localrepo/*
+    do
+        pacman -U $i --noconfirm --needed
+    done
+#    pacman -S autoconf automake binutils bison fakeroot flex gcc libtool m4\
+#              make patch git patchutils svn yaourt --noconfirm --needed
+#    cp -f /etc/yaourtrc.pacorig /etc/yaourtrc
+    exec
+    touch /etc/xdg/indinitgs
+    notify_me '"Initialization task"' '" finished"'
+    date
+fi

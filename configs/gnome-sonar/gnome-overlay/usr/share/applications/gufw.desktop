@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Firewall Configuration
+Name[fr]=Configuration du pare-feu
+GenericName=Firewall Configuration
+X-GNOME-FullName=Gufw Firewall Configuration
+Comment=An easy way to configure your firewall
+Comment=Une façon simple de configurer votre pare-feu
+Exec=gksu gufw
+Icon=gufw
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;System;
+X-GNOME-Settings-Panel=gufw.png

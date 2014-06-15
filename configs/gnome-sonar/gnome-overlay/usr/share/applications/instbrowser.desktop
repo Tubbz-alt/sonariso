@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=InstBrowser
+Comment=Browser installer
+Comment[fr]=Installateur de navigateur
+Exec=gksu instbrowser.py
+Icon=web-browser
+Type=Application
+Categories=GTK;Network;WebBrowser;
+
+

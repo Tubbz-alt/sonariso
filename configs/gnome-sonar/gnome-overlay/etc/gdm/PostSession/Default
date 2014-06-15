@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# Hack around the fact that speech-dispatcher and pulseaudio never die on their own
+pkill -9 speech-dispatch
+pulseaudio -k
+exit 0

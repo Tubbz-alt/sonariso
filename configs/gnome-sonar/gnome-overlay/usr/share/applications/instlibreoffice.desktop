@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Icon=document-save
+Type=Application
+Categories=Office
+Exec=gksu /usr/bin/instlibreoffice.py
+MimeType=application/vnd.openofficeorg.extension;
+Name=LibreOffice Installer
+Name[fr]=Installateur de LibreOffice
+GenericName=Office Installer
+GenericName[fr]=Installateur Office
+Comment=Install office productivity suite compatible to the open and standardized ODF document format. Supported by The Document Foundation.
+Comment[en]=Install office productivity suite compatible to the open and standardized ODF document format. Supported by The Document Foundation.

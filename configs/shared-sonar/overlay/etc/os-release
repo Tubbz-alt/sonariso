@@ -1,0 +1,7 @@
+NAME="Sonar Linux"
+ID=manjaro
+PRETTY_NAME="Sonar Linux"
+ANSI_COLOR="1;32"
+HOME_URL="http://sonar-project.org/"
+SUPPORT_URL="http://sonar-project.org/"
+BUG_REPORT_URL="http://sonar-project.org/"
