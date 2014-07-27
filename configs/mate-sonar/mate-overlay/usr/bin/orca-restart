@@ -1,0 +1,11 @@
+#!/usr/bin/bash
+#script to kill off and restart orca if it freezzes
+espeak -ven-us -s 300 'restarting orca'
+killall orca
+killall sd_ibmtts
+killall sd_espeak
+killall speech-dispatch
+orca --replace
+
+exit 0
+
