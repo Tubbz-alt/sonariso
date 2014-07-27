@@ -29,124 +29,92 @@ xorg-xinit
 ## Graphical Installer
 thus
 
-## Artwork
-#manjaro-artwork
-
-## GNOME
-
-accerciser
-#aisleriot
-alacarte
-anjuta
+## gnome
 baobab
-brasero
-caribou
-#cheese
-devhelp
 #empathy
 eog
 epiphany
 evince
-#evolution
-file-roller
-#five-or-more
-#four-in-a-row
-gdl
 gdm
-gedit
-gjs
-glade
 gnome-backgrounds
-gnome-bluetooth
 gnome-calculator
-#gnome-chess
-gnome-clocks
-gnome-color-manager
-gnome-common
 gnome-contacts
 gnome-control-center
 gnome-desktop
-gnome-devel-docs
 gnome-dictionary
 gnome-disk-utility
-gnome-doc-utils
-gnome-documents
 #gnome-font-viewer
-gnome-getting-started-docs
 gnome-icon-theme
-gnome-icon-theme-extras
+#gnome-icon-theme-extras
 gnome-icon-theme-symbolic
 gnome-keyring
-#gnome-klotski
-#gnome-mahjongg
-gnome-menus
-gnome-mime-data
-#gnome-mines
-gnome-nettool
-#gnome-nibbles
-gnome-online-accounts
-#gnome-photos
-gnome-power-manager
-gnome-python
-#gnome-robots
 gnome-screenshot
 gnome-session
+gnome-settings-daemon
 gnome-shell
 gnome-shell-extensions
-gnome-settings-daemon
-gnome-power-manager
-#gnome-sudoku
 gnome-system-log
 gnome-system-monitor
 gnome-terminal
-#gnome-tetravex
 gnome-themes-standard
-gnome-tweak-tool
 gnome-user-docs
-gnome-user-share
-gnome-vfs
-gnome-weather
-gtksourceview3
-#iagno
-icon-naming-utils
-libgnome
-libgnome-data
-libgnome-keyring
-libgnomecanvas
-libgnomeui
-libgsf
-libnautilus-extension
-#lightsoff
+#gnome-user-share
+grilo-plugins
+#gucharmap
 mousetweaks
 mutter
 nautilus
-network-manager-applet
-onboard
-orca
-python2-gnomecanvas
-python2-gnomevfs
-python2-libgnome
-#quadrapassel
-#rygel
-seahorse
 sushi
-#swell-foop
-#tali
 totem
 tracker
-#vinagre
 #vino
 xdg-user-dirs-gtk
 yelp
-#gnome-media
-#gnome-web-photo
-#libgnome-media-profiles
-soundconverter
-#muffin
-gksu
-polkit
-polkit-gnome
-#manjaro-welcome
+
+## gnome-extra
+accerciser
+#aisleriot
+#anjuta
+bijiben
+brasero
+#cheese
+#devhelp
+#evolution
+file-roller
+# five-or-more
+#four-in-a-row
+gedit
+#gedit310
+#gnome-chess
+gnome-clocks
+gnome-color-manager
+#gnome-devel-docs
+gnome-documents
+gnome-getting-started-docs
+# gnome-klotski
+gnome-logs
+#gnome-mahjongg
+#gnome-maps
+#gnome-mines
+#gnome-music
+gnome-nettool
+#gnome-nibbles
+#gnome-photos
+#gnome-robots
+#gnome-sudoku
+#gnome-tetravex
+gnome-weather
+#iagno
+#lightsoff
+nautilus-sendto
+orca
+#polari
+#quadrapassel
+#rygel
+seahorse
+#swell-foop
+#tali
+#vinagre
 
 ## Network
 netctl
@@ -155,37 +123,12 @@ networkmanager-dispatcher-ntpd
 openresolv
 
 ## Extra
+gnome-tweak-tool
 icedtea-web-java7
-vlc
-
-## Theme
-#nitrux-icon-theme
-#faenza-green-icon-theme
-#xfce-theme-greenbird
-#adwaita-manjaro-themes
-#zukitwo-themes
-#numix-manjaro-themes
 
 ## Other Applications
 firefox
-thunderbird
-mumble
-pidgin
-purple-plugin-pack
-#leafpad
-imagewriter
-#ttf-droid
-open-dyslexic-fonts
-#lxterminal
-#viewnior
-#flashplugin
-numlockx
 gparted
-p7zip
-udiskie
-udisks
-udisks2
-openssh
 gvfs
 gvfs-afc
 gvfs-afp
@@ -193,20 +136,32 @@ gvfs-gphoto2
 gvfs-mtp
 gvfs-smb
 hexchat
-#banshee
+imagewriter
+mumble
+open-dyslexic-fonts
+openssh
+p7zip
+pidgin
+purple-plugin-pack
 rhythmbox
-gimp
-#shotwell
+thunderbird
 tomboy
-#chromium-bsu
+udiskie
+udisks
+udisks2
+vlc
+
+##plymouth themes
+plymouth-theme-manjaro
+plymouth-theme-manjaro-elegant
 
 ## Package management
-
-pamac
-manjaro-settings-manager
 ffmpegthumbnailer
+manjaro-settings-manager
+pamac
 
 ## Packages for Sound and Audio
+espeak
 gst-libav
 gst-plugins-bad
 gst-plugins-base
@@ -216,24 +171,21 @@ gstreamer0.10-bad-plugins
 gstreamer0.10-base-plugins
 gstreamer0.10-good-plugins
 gstreamer0.10-ugly-plugins
-#flashplugin
 libdvdcss
 manjaro-alsa
 manjaro-pulse
-pavucontrol
 pa-applet
+pavucontrol
 pulseaudio-ctl
-espeak
 
 ## Printing
 manjaro-printer
 
 ## Office
-#libreoffice-installer
-libreoffice-en-US
 libreoffice-base
 libreoffice-calc
 #libreoffice-draw
+libreoffice-en-US
 libreoffice-gnome
 #libreoffice-impress
 libreoffice-math
@@ -241,8 +193,10 @@ libreoffice-math
 libreoffice-writer
 
 #accessibility
-qt-at-spi
+# blather
+eviacam
 java-atk-wrapper
+qt-at-spi
 
 ## AUR Access
 autoconf
@@ -252,6 +206,7 @@ bison
 fakeroot
 flex
 gcc
+git
 libtool
 m4
 make

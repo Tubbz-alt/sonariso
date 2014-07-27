@@ -34,8 +34,44 @@ xcursor-vanilla-dmz-aa
 #faenza-green-icon-theme
 #numix-manjaro-themes
 
-## MATE Main Packages
-mate
+#mate group
+
+marco
+mate-backgrounds
+mate-control-center
+mate-desktop
+mate-dialogs
+mate-icon-theme
+mate-menus
+mate-panel
+mate-polkit
+mate-session-manager
+mate-settings-daemon-pulseaudio
+mate-themes
+#mate-extra group
+caja-gksu
+ caja-image-converter
+ caja-open-terminal
+ caja-sendto
+ caja-share
+ engrampa
+ eom
+ galculator-gtk2
+ mate-applets
+ mate-icon-theme-faenza
+ mate-media-pulseaudio
+ mate-netspeed
+ mate-power-manager
+ mate-screensaver
+ mate-sensors-applet
+ mate-system-monitor
+ mate-system-tools
+ mate-terminal
+ mate-user-share
+ mate-utils
+ mozo
+ pluma
+#mate applets
 mate-applet-lockkeys
 mate-applet-softupd
 mate-applet-streamer    
@@ -53,7 +89,7 @@ thus
 
 ## Applications
 brasero
-flashplugin
+chromium-chromevox
 firefox
 gksu
 gnome-bluetooth
@@ -64,21 +100,19 @@ gvfs-afp
 gvfs-gphoto2
 gvfs-mtp
 gvfs-smb
-hexchat
-imagewriter
+isousb
+pidgin
 libdvdcss
 lightdm-another-gtk-greeter-themes
-manjaro-settings-manager
-manjaro-welcome
-#mdm-themes
+mate-mplayer
+mplayer#mdm-themes
 thunderbird
 transmission-gtk
 udiskie
 udisks
 udisks2
 vlc
-xnoise
-
+xdg-user-dirs-gtk
 ## Packages for Sound and Audio
 gst-libav
 gst-plugins-bad
@@ -104,12 +138,8 @@ ttf-droid
 ## Office
 #libreoffice-installer
 libreoffice-en-US
-libreoffice-base
 libreoffice-calc
-libreoffice-draw
 libreoffice-gnome
-libreoffice-impress
-libreoffice-math
 libreoffice-postgresql-connector
 libreoffice-writer
 
@@ -129,3 +159,40 @@ yaourt
 
 ## Printing
 manjaro-printer
+
+#accessibility packages
+orca
+speech-dispatcher
+espeakup
+notify-osd
+qt-at-spi
+java-atk-wrapper
+
+
+#some useful cli apps
+sox
+surfraw
+wget
+newsbeuter
+irssi
+elinks
+lynx
+smartmontools
+youtube-viewer
+#rescue apps
+fsarchiver
+rsync
+parted
+testdisk
+
+#Sound theme support
+sound-theme-freedesktop
+#plymouth themes
+plymouth-theme-manjaro
+plymouth-theme-manjaro-elegant
+
+#alternative software update applet for mate
+mate-applet-softupd
+#accessible pdf reader
+evince
+

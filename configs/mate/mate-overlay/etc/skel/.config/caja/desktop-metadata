@@ -1,20 +1,19 @@
 [directory]
 caja-icon-view-keep-aligned=true
-caja-icon-view-layout-timestamp=1393535736
+caja-icon-view-layout-timestamp=1405675309
+caja-icon-view-tighter-layout=false
 
 [trash]
-caja-icon-position=64,602
+caja-icon-position=220,102
 icon-scale=1
-caja-icon-position-timestamp=1393535736
+caja-icon-position-timestamp=1405675309
 
 [home]
 caja-icon-position=64,102
 icon-scale=1
-caja-icon-position-timestamp=1393535736
+caja-icon-position-timestamp=1405675309
 
 [computer]
 caja-icon-position=64,22
 icon-scale=1
-caja-icon-position-timestamp=1393535736
-custom-icon=file:///usr/share/icons/NITRUX/devices/scalable/monitor.svg
-annotation=
+caja-icon-position-timestamp=1405675309
