@@ -13,8 +13,11 @@ bumblebee
 primus
 KERNEL-bbswitch
 >x86_64 lib32-primus
-## Broadcom Support
+
+## Network Support
 KERNEL-broadcom-wl
+KERNEL-rt3562sta
+KERNEL-r8168
 
 ## Proprietary Drivers
 >nonfree_uni catalyst-utils
@@ -27,7 +30,8 @@ KERNEL-broadcom-wl
 >nonfree_x64 lib32-nvidia-utils
 >nonfree_x64 lib32-nvidia-legacy-utils
 >nonfree_x64 lib32-gcc-libs
->nonfree_x64 lib32-zlib
+>nonfree_x64 lib32-zlib 
+
 ## Virtualbox Drivers
 >free_uni virtualbox-guest-utils
 >free_uni KERNEL-virtualbox-guest-modules
@@ -50,6 +54,7 @@ open-vm-tools
 
 ## Cleanup Xorg packages
 >cleanup xf86-input-evdev*
+>cleanup xf86-input-joystick*
 >cleanup xf86-input-keyboard*
 >cleanup xf86-input-mouse*
 >cleanup xf86-input-synaptics*
