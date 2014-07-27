@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Exec=canberra-gtk-play -i desktop-login
-Hidden=false
-X-MATE-Autostart-enabled=true
-Name[en_US]=play login sound
-Name=play login sound
-Comment[en_US]=plays a sound whenever you log in. Different depending on which theme is used.
-Comment=plays a sound whenever you log in. Different depending on which theme is used.
